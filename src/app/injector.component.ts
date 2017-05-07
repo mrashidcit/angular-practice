@@ -36,7 +36,6 @@ export class InjectorComponent implements OnInit {
         return this.injector.get(ROUS, rousDontExist);
     }
 
-
 }
 
 /**
