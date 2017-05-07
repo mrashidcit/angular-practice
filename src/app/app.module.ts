@@ -9,12 +9,15 @@ import {HeroesComponent} from "./heroes/heroes.component";
 import {HeroListComponent} from "./heroes/hero-list.component";
 import {HeroService} from "./heroes/hero.service";
 import {Logger} from "./logger.service";
+import {UserService} from "./user.service";
+import {InjectorComponent} from "./injector.component";
 
 @NgModule({
   declarations: [
       AppComponent,
       HeroesComponent,
-      HeroListComponent
+      HeroListComponent,
+      InjectorComponent
 
   ],
   imports: [
@@ -24,7 +27,8 @@ import {Logger} from "./logger.service";
 
   ],
   providers: [
-      Logger
+      Logger,
+      UserService
 
   ],
   bootstrap: [AppComponent]

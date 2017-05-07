@@ -1,4 +1,4 @@
-import {Car} from "./car";
+import {Car, Engine, Tires} from "./car";
 
 
 // BAD pattern!

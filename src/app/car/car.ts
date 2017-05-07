@@ -1,4 +1,16 @@
+import { Injectable } from '@angular/core';
 
+export class Engine {
+    public cylinders = 4;
+}
+
+export class Tires {
+    public make = 'Flintstone';
+    public model = 'Square';
+}
+
+
+@Injectable()
 export class Car {
 
 
