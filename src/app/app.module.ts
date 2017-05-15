@@ -5,19 +5,26 @@ import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
-import {HeroesComponent} from "./heroes/heroes.component";
-import {HeroListComponent} from "./heroes/hero-list.component";
-import {HeroService} from "./heroes/hero.service";
-import {Logger} from "./logger.service";
-import {UserService} from "./user.service";
-import {InjectorComponent} from "./injector.component";
+import {HeroDetailComponent, BigHeroDetailComponent} from './hero-detail.component';
+import { MySizerComponent } from './my-sizer.component';
+import {
+    HeroSwitchComponent, HappyHeroComponent, SadHeroComponent,
+    ConfusedHeroComponent, UnknownHeroComponent
+} from './hero-switch.component';
+import { HeroFormComponent } from './hero-form.component';
 
 @NgModule({
   declarations: [
       AppComponent,
-      HeroesComponent,
-      HeroListComponent,
-      InjectorComponent
+      HeroDetailComponent,
+      BigHeroDetailComponent,
+      MySizerComponent,
+      HeroSwitchComponent,
+      HappyHeroComponent,
+      SadHeroComponent,
+      ConfusedHeroComponent,
+      UnknownHeroComponent,
+      HeroFormComponent,
 
   ],
   imports: [
@@ -27,8 +34,6 @@ import {InjectorComponent} from "./injector.component";
 
   ],
   providers: [
-      Logger,
-      UserService
 
   ],
   bootstrap: [AppComponent]
