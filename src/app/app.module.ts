@@ -1,36 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {HttpModule, JsonpModule} from '@angular/http';
+import {AppComponent} from "./app.component";
+
+import { HeroListComponent } from './toh/hero-list.component';
+import {HeroData} from "./hero-data";
+import {InMemoryWebApiModule} from "angular-in-memory-web-api";
 
 
-import { AppComponent } from './app.component';
-import {HeroDetailComponent, BigHeroDetailComponent} from './hero-detail.component';
-import { MySizerComponent } from './my-sizer.component';
-import {
-    HeroSwitchComponent, HappyHeroComponent, SadHeroComponent,
-    ConfusedHeroComponent, UnknownHeroComponent
-} from './hero-switch.component';
-import { HeroFormComponent } from './hero-form.component';
 
 @NgModule({
   declarations: [
       AppComponent,
-      HeroDetailComponent,
-      BigHeroDetailComponent,
-      MySizerComponent,
-      HeroSwitchComponent,
-      HappyHeroComponent,
-      SadHeroComponent,
-      ConfusedHeroComponent,
-      UnknownHeroComponent,
-      HeroFormComponent,
+      HeroListComponent,
+
+
+
 
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    JsonpModule,
+      InMemoryWebApiModule.forRoot(HeroData)
 
   ],
   providers: [
