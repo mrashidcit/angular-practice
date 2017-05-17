@@ -3,6 +3,7 @@ import {Injectable} from "@angular/core";
 import {Http, Response, RequestOptions, Headers} from "@angular/http";
 import {Hero} from "./hero";
 import {Observable} from "rxjs";
+import {requestOptionsProvider} from "../default-request-options.service";
 
 
 @Injectable()
@@ -19,10 +20,10 @@ export class HeroService {
     } // end getHeroes()
 
     create(name: string): Observable<Hero> {
-        let headers = new Headers({ 'Content-Type': 'application/json'});
-        let options = new RequestOptions({ headers: headers });
+        //let headers = new Headers({ 'Content-Type': 'application/json'});
+        //let options = new RequestOptions({ headers: headers });
 
-        return this.http.post(this.heroesUrl, { name }, options)
+        return this.http.post(this.heroesUrl, { name }, requestOptionsProvider)
             .map(this.extractData)
             .catch(this.handleError);
     }

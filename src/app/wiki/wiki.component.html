@@ -1,0 +1,8 @@
+<h4>Wikipedia Demo</h4>
+<p>Search after each keystroke</p>
+<input #term (keyup)="search(term.value)" type="text">
+<ul>
+  <li *ngFor="let item of items | async">
+    {{ item }}
+  </li>
+</ul>
