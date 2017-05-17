@@ -7,6 +7,8 @@ import {AppComponent} from "./app.component";
 import { HeroListComponent } from './toh/hero-list.component';
 import {HeroData} from "./hero-data";
 import {InMemoryWebApiModule} from "angular-in-memory-web-api";
+import {HeroListPromiseComponent} from "./toh/hero-list.component.promise";
+
 
 
 
@@ -14,6 +16,7 @@ import {InMemoryWebApiModule} from "angular-in-memory-web-api";
   declarations: [
       AppComponent,
       HeroListComponent,
+      HeroListPromiseComponent
 
 
 
