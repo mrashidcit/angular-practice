@@ -1,34 +1,15 @@
-<a href="" id="top"></a>
-<h1>Component Lifecycle Hooks</h1>
-<a href="#hooks">Pekk-a-boo: (most) lifecycle hooks</a>
+<h1>Angular Router</h1>
+<nav>
+    <a routerLink="/crisis-center"
+        routerLinkActive="active">
+        Crisis Center
+    </a>
 
-<a id="hooks"></a>
-<peek-a-boo-parent></peek-a-boo-parent>
-<a href="#top">back to top</a>
+    <a routerLink="/heroes"
+       routerLinkActive="active">
+        Heroes
+    </a>
 
-<a id="spy"></a>
-<spy-parent></spy-parent>
-<a href="#top">back to top</a>
+</nav>
 
-
-<a id="onchanges"></a>
-<app-on-changes-parent></app-on-changes-parent>
-<a href="#top">back to top</a>
-
-
-<a id="docheck"></a>
-<app-do-check-parent></app-do-check-parent>
-<a href="#top">back to top</a>
-
-<a id="after-view"></a>
-<app-after-view-parent></app-after-view-parent>
-<a href="#top">back to top</a>
-
-<a id="after-content"></a>
-<app-after-content-parent></app-after-content-parent>
-<a href="#top">back to top</a>
-
-<a id="counter"></a>
-<app-counter-parent></app-counter-parent>
-<a href="#top">back to top</a>
-
+<router-outlet></router-outlet>
